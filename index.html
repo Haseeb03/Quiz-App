@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Quiz Application</h2>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="quiz-name-full">FULL name</h1>
+    <div id="quiz-name-div">
+      <!-- <h1 class="quiz-name-short">SHORT name</h1> -->
+    </div>
+    <div id="quiz-tracker">
+      <!-- <h2 class="question-number">Question: 1</h2> -->
+      <div class="header-counters">
+        <!-- <h3 class="correct-counter">Correct: 2</h3>
+        <h3 class="wrong-counter">Incorrect: 3</h3> -->
+      </div>
+    </div>
+  </header>
+
+  <div id="start-button-div">
+    <button type="submit" id="start-button" class="generic-button">START QUIZ</button>
+  </div>
+
+  <main>
+    <div class="box">
+      <div class="question">Question</div>
+      <form class="form">
+        <div>
+          <input type="radio" id="true" name="answer" value="true">
+          <label for="true">True</label>
+        </div>
+        <div>
+          <input type="radio" id="false" name="answer" value="false">
+          <label for="false">False</label>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <div id="results">
+    <div>
+      <p class="results-tag">RESULTS:</p>
+    </div>
+    <div class="results-counters">
+      <p class="results-correct">Correct: 2</p>
+      <p class="results-wrong">Incorrect: 3</p>
+    </div>
+    <div id="restart-button-div">
+      <button type="submit" id="restart-button" class="generic-button">RESTART?</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
